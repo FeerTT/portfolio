@@ -25,3 +25,375 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.bg-black::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: 
+    repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 1px,
+      white 1px,
+      white 2px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 1px,
+      beige 1px,
+      beige 2px
+    ),
+    repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 1px,
+      black 1px,
+      black 2px
+    );
+  background-size: 100% 20px, 20px 100%;
+}
+:root {
+  --grad-1: rgb(73, 73, 139);
+  --grad-2: rgb(219, 184, 56);
+}
+
+.bg-custom-background{
+  /* background-color: #1d1d20; */
+  background-color: #232323;
+}
+.bg-custom-div{
+  background-color: red;
+  width: 300px;
+  height: 300px;
+}
+.logo-redes {
+  background-color:none; /* Cambia el color de fondo según tus preferencias */
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column-reverse; 
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 16px;
+}
+
+/* Estilos para el ícono de redes sociales cuando está en estado :hover */
+.logo-redes:hover {
+  transform: scale(1.1);
+}
+
+
+.social-media-container {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  /* top: 50%; */
+  width: 100%;
+  height: 100%;
+  right: 20px; 
+}
+
+.divRedes {
+  position: absolute;
+}
+
+
+.social-media-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.social-media-icon {
+  margin-bottom: 10px; /* Ajusta según tu preferencia para separar los iconos */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-icon:hover {
+  transform: scale(1.2);
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.txt {
+  display: block;
+}
+
+.anim-text-flow {
+  animation-name: anim-text-flow-keys;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-text-flow-keys {
+  0% {
+    color: hsl(0, 60%, 60%);
+  }
+  100% {
+    color: hsl(360, 60%, 60%);
+  }
+}
+.color-transition {
+  animation-name: colorTransition;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes colorTransition {
+  0% {
+    fill: hsl(0, 60%, 60%);
+  }
+  50% {
+    fill: hsl(180, 60%, 60%);
+  }
+  100% {
+    fill: hsl(360, 60%, 60%);
+  }
+}
+
+:root {
+  --hex-color-1: hsl(0, 60%, 60%);
+  --hex-color-2: hsl(120, 60%, 60%);
+  --hex-color-3: hsl(240, 60%, 60%);
+  --hex-color-4: hsl(60, 60%, 60%);
+  --hex-color-5: hsl(180, 60%, 60%);
+}
+
+.colorLetras{
+  color: hsl(0, 60%, 70%);
+  /* background-blend-mode: multiply; */
+}
+.colorLetrasSub{
+  color: hsl(0, 60%, 85%);
+  /* background-blend-mode: multiply; */
+}
+.ulTec{
+  display: inline-flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,900);
+
+*:focus {
+    outline: 0;
+}
+
+html{height:100%;}
+body{
+  background: #858d98; /* Old browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858d98', endColorstr='#4a525d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  background: -moz-radial-gradient(top, ellipse cover,  #858d98 1%, #4a525d 99%); /* FF3.6+ */
+  background: -webkit-gradient(radial, top top, 0px, top top, 100%, color-stop(1%,#858d98), color-stop(99%,#4a525d)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(top, ellipse cover,  #858d98 1%,#4a525d 99%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(top, ellipse cover,  #858d98 1%,#4a525d 99%); /* Opera 12+ */
+  background: -ms-radial-gradient(top, ellipse cover,  #858d98 1%,#4a525d 99%); /* IE10+ */
+  background: radial-gradient(ellipse at top,  #858d98 1%,#4a525d 99%); /* W3C */
+}
+
+
+.dim:hover{
+  margin-top:5px;
+opacity:0.8;
+filter:alpha(opacity=80); /* For IE8 and earlier */
+
+}
+
+
+#container {
+  max-width: 800px;
+  margin: auto;
+  overflow: auto;
+}
+
+#demo {
+  width: 100%;
+  font-family: 'Lato', calibri, arial;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px;
+  text-align: left;
+  background: none;
+  overflow: auto;
+  margin-bottom: 20px; /* Ajuste para mejorar el espacio en dispositivos pequeños */
+  color: #fff;
+}
+
+#contact-wrap {
+  font-family: 'Lato', calibri, arial;
+  font-size: 16px;
+  font-weight: 300;
+  width: 100%;
+  color: #fff;
+  overflow: auto;
+  margin-left: 0; /* Eliminamos el margen izquierdo en dispositivos pequeños */
+}
+
+.contact-info{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.break-all{
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+#contact-area {
+  margin-left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+#contact-area input,
+#contact-area textarea {
+  width: 100%;
+  font-family: 'Lato', calibri, arial;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-bottom: 15px;
+}
+
+#contact-area textarea {
+  height: 150px;
+}
+
+#contact-area input.submit-button {
+  font-family: 'Lato', calibri, arial;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 100%;
+  float: none; /* Desactivamos el flotado para que ocupe el ancho completo */
+  margin-bottom: 15px;
+}
+
+label {
+	float: left;
+	text-align: left;
+	margin-right: 16px;
+	width: 100px;
+	padding-top: 5px;
+  font-family: 'Lato', calibri, arial;
+  font-size:18px;
+  font-weight:300;
+}
+
+
+
+::-webkit-input-placeholder {
+  color: red;
+
+  font-size:14px;
+}
+
+:-moz-placeholder {
+  color: red; 
+
+  font-size:14px;
+}
+
+::-moz-placeholder {
+  color: red;
+
+  font-size:14px;
+}
+
+:-ms-input-placeholder {  
+   color: #fff;  
+
+  font-size:14px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos del contenido del modal */
+.modal-content {
+  background: gray; /* Fondo blanco para el contenido del modal */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Estilos del botón de cerrar */
+.modal-close {
+  background: #3498db; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilo para el texto del mensaje en el modal */
+.modal-content p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* Estilo para el botón de cerrar */
+.modal-close:hover {
+  background: #2980b9; /* Cambia el color cuando el mouse está sobre el botón */
+}
+
+.botonInput {
+  width: 100%;
+  background-color: #1dbacf; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Transición para el cambio de color de fondo */
+}
+.botonInput:hover {
+  background-color: #2980b9; /* Cambia el color de fondo cuando el mouse está sobre el botón */
+}
+/*ACA EMPIEZA LA PRUEBA*/
+
+.banderitas{
+  display: flex;
+  flex-direction: row-reverse;
+}
+

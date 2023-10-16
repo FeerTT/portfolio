@@ -33,9 +33,10 @@ export default function Home() {
         </div>
 
         <h3 className="text-left colorLetras mt-20 ml-8">{t('aboutMe')}:</h3>
-        <p className="text-left mt-5 ml-12 text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore mollitia possimus
-        ea debitis delectus eligendi repellat quidem reprehenderit eaque incidunt aut,
-        repellat quidem reprehenderit eaque incidunt aut</p>
+        <p className="text-left mt-5 ml-12 text-base">{t('parteUno')}<br></br>
+        {t('parteDos')} <br></br>
+        {t('parteTres')}<br></br>
+        {t('parteCuatro')}</p>
         <article className="">
         <h3 className="text-left colorLetras mt-20 ml-8">{t('studiesAndCertifications')}:</h3>
         <ul className="list-disc mt-5 pl-8 text-left text-base ml-0">
