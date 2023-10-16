@@ -22,7 +22,7 @@ export default async function handler(req, res) {
   });
   const mailOptions = {
     from: 'tastymeals2023@gmail.com',
-    to: Email, 
+    to: 'fernandotrillobaron25@hotmail.com', 
     subject: 'Nuevo mensaje de contacto',
     html: `
       <p><strong>Nombre:</strong> ${Name}</p>
