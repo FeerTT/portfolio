@@ -13,7 +13,7 @@ function Card({ title, description, videoUrl, deploy }) {
 
   return (
     <div className="card-bg shadow-md  rounded-lg px-6 py-4 transition-transform transform hover:scale-105 mb-7">
-    <ul className=" mt-5 pl-8 text-base ml-0">
+    <ul className=" mt-5 text-base ml-0">
       <li className="text-base mb-6 ml-6">
         <p className="text-center text-xl colorLetras">{title}</p>
         <div className="mt-4 max-w-sm mx-auto">
