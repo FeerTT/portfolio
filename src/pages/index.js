@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import ContactForm from "@/components/form";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "@/components/traducciones";
+import Card from "@/components/card";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -71,6 +72,7 @@ export default function Home() {
         <li className="mb-2 ml-9">BootStrap</li>
         <li className="mb-2 ml-9">GitHub</li>
         <li className="mb-2 ml-9">API RESTful</li>
+        <li className="mb-2 ml-9">Swagger</li>
         <li className="mb-2 ml-9">Postman</li>
       </ul>
       </article>
@@ -79,23 +81,29 @@ export default function Home() {
       <h3 className="text-left colorLetras mt-20 ml-8">{t('experiences')}:</h3>
       <h4 className="text-left ml-8 text-lg  mt-5 colorLetrasSub"><strong>{t('projectsFinished')}:</strong></h4>
 
-      <ul className=" list-disc mt-5 pl-8 text-left text-base ml-0">
 
-        <li className="text-base mb-6 ml-6">{t('tastyMeals')} 
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto px-4 mt-8">
+      <Card
+        title={t('tmTittle')}
+        description={t('tastyMeals')}
+        videoUrl="https://www.youtube.com/embed/5l8s_nM7Am0?si=hCUxuH4riX0fLGwu"
+        deploy="https://tasty-meals.vercel.app/"
+      />
+      <Card
+        title={t('pb')}
+        description={t('projectBackend')}
+        videoUrl="https://www.youtube.com/embed/PAsBUDV0gRk?si=XAEV-f8u1MolD4WL"
+        deploy="https://github.com/FeerTT/Practicas-Backend"
+      />
+      <Card
+        title={t('pm')}
+        description={t('projectMemorama')}
+        videoUrl="https://www.youtube.com/embed/xtkSXX_RIZw?si=TmSd8IdwjAwzjkR7"
+        deploy="https://memorama-fernandotrillo.vercel.app/"
+      />
+      </div>
 
-        <div className="mt-4 relative" style={{ height: '300px' }}>
-          <iframe
-            className="w-full h-full absolute top-0 left-0 "
-            src="https://www.youtube.com/embed/5l8s_nM7Am0?si=hCUxuH4riX0fLGwu"
-            title="YouTube Video Tasty Meals"
-            frameBorder="0"
-            allow="web-share"
-            allowFullScreen
-          ></iframe>
-        </div>
-        </li>
-        
-      </ul>
+
       <h4 className="text-left text-lg mt-20 ml-8 colorLetrasSub">{t('projectsInProgress')}:</h4>
 
       <ul className=" list-disc mt-5 pl-8 text-left text-base ml-0"> 

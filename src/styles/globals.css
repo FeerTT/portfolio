@@ -7,7 +7,9 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
+.card-bg{
+  background-color: #3f3f40;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -89,7 +91,9 @@ body {
 
 /* Estilos para el ícono de redes sociales cuando está en estado :hover */
 .logo-redes:hover {
-  transform: scale(1.1);
+  color: #ff9900; 
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 
