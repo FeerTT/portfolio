@@ -101,7 +101,7 @@ export default function Home() {
         title={t('pm')}
         description={t('projectMemorama')}
         videoUrl="https://www.youtube.com/embed/xtkSXX_RIZw?si=TmSd8IdwjAwzjkR7"
-        deploy="https://memorama-fernandotrillo.vercel.app/"
+        deploy="https://p-memorama.vercel.app/"
       />
       </div>
 
