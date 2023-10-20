@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "@/components/traducciones";
 import Card from "@/components/card";
 
+
 export default function Home() {
   const { t } = useTranslation();
   
@@ -18,6 +19,7 @@ export default function Home() {
   }, []);
   
   return (
+    
     <main className="bg-custom-background ">
       <section id="about" className="p-8">
       <LanguageSwitcher></LanguageSwitcher>
@@ -124,25 +126,26 @@ export default function Home() {
 
       
       <article>
-    <h2 className="text-left colorLetras mt-20 ml-14">{t('contactInformation')}</h2>
+    <h3 className="text-left colorLetras mt-20 ml-8 p-8">{t('contactInformation')}</h3>
     <ul className=" pl-8 mt-10 text-left text-base">
-      <li className="text-base mb-3 ml-12">
+      <li className="text-base mb-3 ml-9">
         <strong>{t('telefono')}: </strong> +54 9 3434-713739
       </li>
-      <li className="text-base mb-3 ml-12">
+      <li className="text-base mb-3 ml-9">
         <strong>{t('E-mail')}: </strong><span className="break-all">fernandotrillobaron25@hotmail.com</span>
       </li>
-      <li className="text-base mb-3 ml-12">
+      <li className="text-base mb-3 ml-9">
         <strong>{t('location')}: </strong> Argentina, Entre Rios.
       </li>
     </ul>
   </article>
   
       <footer className="mt-20">
-        <h2 className="colorLetras">{t('contact')}</h2>
+        <h3 className="colorLetras">{t('contact')}</h3>
         <ContactForm></ContactForm>
         <p className="text-center mt-8" style={{ fontFamily: 'Montserrat, sans-serif', color: '#888', fontSize: '14px' }}>{t('designed')}</p>
       </footer>
     </main>
+
   )
 }
