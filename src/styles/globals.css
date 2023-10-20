@@ -75,6 +75,7 @@ body {
   height: 300px;
 }
 .logo-redes {
+  -webkit-tap-highlight-color: transparent;
   background-color:none; /* Cambia el color de fondo según tus preferencias */
   padding: 10px;
   border-radius: 5px;
@@ -87,6 +88,7 @@ body {
   bottom: 0;
   right: 0;
   margin: 16px;
+  z-index: 9999;
 }
 
 /* Estilos para el ícono de redes sociales cuando está en estado :hover */
