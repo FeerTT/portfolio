@@ -25,7 +25,7 @@ function Card({ title, description, videoUrl, deploy }) {
         allowFullScreen
       ></iframe>
     </div>
-    <p className="text-center parrafo mt-3">{description}</p>
+    <p className="text-center parrafo text-base mt-3">{description}</p>
   </div>
   <div className="deploy-button mt-5">
     <div className="flex items-center justify-center mt-2">
