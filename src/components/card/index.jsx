@@ -27,23 +27,25 @@ function Card({ title, description, videoUrl, deploy }) {
     </div>
     <p className="text-center parrafo text-base mt-3">{description}</p>
   </div>
-  <div className="deploy-button mt-5">
-    <div className="flex items-center justify-center mt-2">
-      <FaRocket onClick={handleDeployClick} size={20} className="text-blue-500 mr-2" />
-      <button
-        onClick={handleDeployClick}
-        className="text-center"
-        style={{
-          cursor: 'pointer',
-          transition: 'color 0.3s',
-        }}
-        onMouseEnter={(e) => (e.target.style.color = '#22a3bd')}
-        onMouseLeave={(e) => (e.target.style.color = '')}
-      >
-        Deployment
-      </button>
-    </div>
-  </div>
+  <div className="deploy-button mt-5 text-center">
+        <a className="redireccionador" href={deploy} target="_blank" rel="noopener noreferrer">
+          <div className="flex items-center justify-center">
+            <FaRocket size={20} className="text-blue-500 mr-2" />
+            <button
+              onClick={handleDeployClick}
+              className="text-center"
+              style={{
+                cursor: 'pointer',
+                transition: 'color 0.3s',
+              }}
+              onMouseEnter={(e) => (e.target.style.color = '#22a3bd')}
+              onMouseLeave={(e) => (e.target.style.color = '')}
+            >
+              Deployment
+            </button>
+          </div>
+        </a>
+      </div>
 </div>
   );
 }

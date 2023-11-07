@@ -97,7 +97,10 @@ body {
   cursor: pointer;
   text-decoration: underline;
 }
-
+.redireccionador{
+  position: relative;
+  font-size: 18px;
+}
 
 .social-media-container {
   display: flex;
