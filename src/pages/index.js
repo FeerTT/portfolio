@@ -94,7 +94,7 @@ export default function Home() {
       <Card
         title={t('pb')}
         description={t('projectBackend')}
-        videoUrl="https://www.youtube.com/embed/PAsBUDV0gRk?si=XAEV-f8u1MolD4WL"
+        videoUrl="https://www.youtube.com/embed/h2mYChyBMgg?si=WlQmA-BzeHuw9GAO"
         deploy="https://github.com/FeerTT/Practicas-Backend"
       />
       <Card
