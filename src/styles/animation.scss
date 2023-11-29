@@ -1,20 +1,14 @@
-/*
- * Animation module with all animation code
- */
+
  .anim-text-flow,
  .anim-text-flow-hover:hover {
-   /*
-    * Animation variables
-    */
+   
    $animationSteps: 10;
-   $animationDuration: 50;
+   $animationDuration: 35;
    $animationElement: span;
    $animationElementsCount: 100;
    $delayBetweenLetters: 0.2;
  
-   /*
-    * Elements settings
-    */
+   
    #{$animationElement} {
      animation-name: anim-text-flow-keys;
      animation-duration: #{$animationDuration}s;
@@ -23,9 +17,6 @@
      animation-fill-mode: forwards;
    }
  
-   /*
-    * Keyframe loop
-    */
    @keyframes anim-text-flow-keys {
      @for $i from 0 through $animationSteps {
        #{percentage($i * (1 / $animationSteps))} {
@@ -34,9 +25,6 @@
      }
    }
  
-   /*
-    * Element animation delay loop
-    */
    $totalDelayTime: $animationElementsCount * $delayBetweenLetters;
  
    @for $i from 1 through $animationElementsCount {
@@ -47,9 +35,6 @@
    
  }
  
- ////////////////////////////
- // DEMO CODE
- ///////////////////////////
  body {
    background-color: #1a1a1a;
    color: #fefefe;

@@ -52,7 +52,9 @@ i18n
               projectMemorama:"I've developed a fun memory game to improve my Front-End skills.",
               tmTittle:'Tasty Meals Project',
               pb:'Backend Project',
-              pm:'Memory Game Project'
+              pm:'Memory Game Project',
+              projectAguaTitle:'Drinking Water Project',
+              projectAgua:'The app was developed to manage users and monthly consumption measurements for the local drinking water service. It allows data input, calculates the total amount due, and generates the corresponding invoices.'
             },
           },
           es: {
@@ -103,6 +105,8 @@ i18n
               tmTittle:'Proyecto Tasty Meals',
               pb:'Proyecto Backend',
               pm:'Proyecto Memorama',
+              projectAguaTitle:'Proyecto Agua Potable',
+              projectAgua:'Se desarrolló una App para gestionar los usuarios y las mediciones de consumo mensuales para el servicio de agua potable de mi localidad. En la misma se cargan los datos, se genera el total a abonar y se realizan dichos comprobantes.'
             },
       },
     },

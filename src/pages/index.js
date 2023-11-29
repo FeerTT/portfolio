@@ -86,16 +86,16 @@ export default function Home() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto px-4 mt-8">
       <Card
+        title={t('projectAguaTitle')}
+        description={t('projectAgua')}
+        videoUrl="https://www.youtube.com/embed/bXcUc35QUDM?si=0PCR22QRS3pl6i7w"
+        deploy="https://github.com/FeerTT/Agua-Brasilera"
+      />
+      <Card
         title={t('tmTittle')}
         description={t('tastyMeals')}
         videoUrl="https://www.youtube.com/embed/5l8s_nM7Am0?si=hCUxuH4riX0fLGwu"
         deploy="https://tasty-meals.vercel.app/"
-      />
-      <Card
-        title={t('pb')}
-        description={t('projectBackend')}
-        videoUrl="https://www.youtube.com/embed/h2mYChyBMgg?si=WlQmA-BzeHuw9GAO"
-        deploy="https://github.com/FeerTT/Practicas-Backend"
       />
       <Card
         title={t('pm')}
@@ -103,14 +103,19 @@ export default function Home() {
         videoUrl="https://www.youtube.com/embed/xtkSXX_RIZw?si=TmSd8IdwjAwzjkR7"
         deploy="https://trillo-fernando-memorama.vercel.app/"
       />
+      <Card
+        title={t('pb')}
+        description={t('projectBackend')}
+        videoUrl="https://www.youtube.com/embed/h2mYChyBMgg?si=WlQmA-BzeHuw9GAO"
+        deploy="https://github.com/FeerTT/Practicas-Backend"
+      />
       </div>
-
-
       <h4 className="text-left text-lg mt-20 ml-8 colorLetrasSub">{t('projectsInProgress')}:</h4>
 
       <ul className=" list-disc mt-5 pl-8 text-left text-base ml-0"> 
 
-        <li className="text-base mb-6 ml-5">{t('aguaPotable')}</li>
+        {/* <li className="text-base mb-6 ml-5">{t('aguaPotable')}</li> */}
+        
         <li className="text-base mb-3 ml-5">{t('truco')}</li>
       </ul>
       </article>
