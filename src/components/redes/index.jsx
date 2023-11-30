@@ -44,9 +44,9 @@ const SocialMediaBox = () => {
               <div className="social-media-icon text-black" onClick={redirectToGitHub}>
                 <FaGithub size={30} alt="GitHub" />
               </div>
-              <div className="social-media-icon text-red-500" onClick={redirectToEmail}>
+              {/* <div className="social-media-icon text-red-500" onClick={redirectToEmail}>
                 <FaEnvelope size={30} alt="Email" />
-              </div>
+              </div> */}
               <div className="social-media-icon text-pink-500" onClick={redirectToInstagram}>
                 <FaInstagram size={30} alt="Instagram" />
               </div>

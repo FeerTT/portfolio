@@ -63,8 +63,8 @@ export default function Home() {
         <li className="mb-2 ml-9">Node.js</li>
         <li className="mb-2 ml-9">Express</li>
         <li className="mb-2 ml-9">Nest.js</li>
-        <li className="mb-2 ml-9">Prisma (ORM)</li>
-        <li className="mb-2 ml-9">Sequelize (ORM)</li>
+        <li className="mb-2 ml-9">Prisma</li>
+        <li className="mb-2 ml-9">Sequelize</li>
         <li className="mb-2 ml-9">TypeORM</li>
         <li className="mb-2 ml-9">PostgreSQL</li>
         <li className="mb-2 ml-9">Tailwind</li>
